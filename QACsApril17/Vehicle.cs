@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace QACsApril17
 {
+    // Can never instance vehicle. Represents the common features of a vehicle
     internal abstract class Vehicle: IDriveable // interface on the base class
     {
         public double weight;
@@ -18,9 +19,9 @@ namespace QACsApril17
             this.owner = owner;
         }
 
-        public abstract void Drive(double distance);
+        public abstract void Drive(double distance); // No Behaviour
 
-        public string getOwner()
+        public string getOwner() //otpional default behaviour
         {
             return this.owner;
         }
@@ -29,6 +30,11 @@ namespace QACsApril17
     internal class Car: Vehicle // Inheritance
     {
         public int doors;
+
+        public static void Describe()
+        {
+            Console.WriteLine("cars .... doors......do peoples but peoples are cars");
+        }
 
         public Car(string owner) : base(owner)
         {}

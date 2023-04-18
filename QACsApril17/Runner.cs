@@ -13,6 +13,62 @@ namespace QACsApril17
     {
         public static void Main(String[] args)
         {
+            // Upcast from dog to animal
+            Animal a = new Dog("segeg", "science");
+
+            Console.WriteLine(a.scientifcName);
+
+            //a.age = 10;
+            a.SetAge(22);
+
+            Console.WriteLine(a.age);
+
+            if (a is Mammal)
+            {
+                ((Mammal)a).growHair();
+            }
+
+            if (a is IPetable)
+            { // Down cast from animal to dog
+                ((IPetable)a).Pet();
+                
+            }
+
+            if (a is Dog)
+            {
+                ((Dog)a).Pet("head");
+            }
+
+
+
+            // Class MathsFunction
+            // + - / * (% log) as Mathsfunction Subclasses
+
+            // No static methods in the calcualtor
+            // MathsFunction is by assocation - Currect operation, Run operation method
+
+            // Extention Array of mathsfunctions
+            // Menu
+            // list that records operations
+
+            Calculator2 calculator = new Calculator2();
+            calculator.CurrentOperation = new Divsion();
+            Console.WriteLine(calculator.Use(523, 632));
+
+            calculator.CurrentOperation = new Addition();
+            Console.WriteLine(calculator.Use(523, 632));
+
+            calculator.ShowHistory();
+
+            Driver d = new Driver();
+            d.vehicle = new Car("Larry");
+
+            Car.Describe();
+            d.vehicle.Drive(42);
+
+            // Error -  Car.Drive(5432);
+            // Error -  d.vehicle.Describe();
+            
             // Arrays (TS)
             // ArrayLists
             // List (TS)

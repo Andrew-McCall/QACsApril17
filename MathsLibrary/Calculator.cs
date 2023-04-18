@@ -60,6 +60,7 @@
         {
             return a%b;
         }
+
         // ExtentionTwo
         public static double ExponentialLog(double a, double b)
         {
