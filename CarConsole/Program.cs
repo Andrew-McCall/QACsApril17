@@ -22,7 +22,6 @@ namespace CarConsole
             Console.WriteLine(c3);
 
             Car c4 = new Car("BMW", "X5", "Hot Pink");
-
             Console.WriteLine(c4);
         }
     }
