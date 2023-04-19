@@ -54,7 +54,7 @@ namespace InterfaceTestProject
         public void Clone_A_Spice_Girl()
         {
             Person baby = new Person("Baby", "Finchley", dob: new DateTime(1976, 1, 21));
-            Person babyClone = (Person)baby.Clone();
+            Person babyClone = baby.CloneGeneric();
             Assert.Equal(baby, babyClone);
         }
         [Fact]

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InterfaceProject
 {
-    public class Person : IEquatable<Person>, IComparable<Person>, ICloneable
+    public class Person : IEquatable<Person>, IComparable<Person>, ICloneable, ICloneable<Person>
     {
         public string Name { get; }
         public string Address { get; }
@@ -42,9 +42,17 @@ namespace InterfaceProject
 
         public object Clone()
         {
-            return new Person(Name, Address, Dob);
+            return this.CloneGeneric(); // implcity upcast to object
         }
 
+        public Person CloneGeneric()
+        {
+            return new Person(Name, Address, Dob);
+        }
     }
 
+    public interface ICloneable<T>
+    {
+        T CloneGeneric();
+    }
 }
