@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLibrary", "..\CarLibrary
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarConsole", "..\CarConsole\CarConsole.csproj", "{015F5DF4-9E21-4AE7-B7C7-5894F787F309}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceProject", "..\InterfaceProject\InterfaceProject.csproj", "{339F0A5E-16AB-4D1D-8330-89950F13A31E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceTestProject", "..\InterfaceTestProject\InterfaceTestProject.csproj", "{0592BADB-6C48-4699-A6C8-CA1038ED4762}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{015F5DF4-9E21-4AE7-B7C7-5894F787F309}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{015F5DF4-9E21-4AE7-B7C7-5894F787F309}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{015F5DF4-9E21-4AE7-B7C7-5894F787F309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{339F0A5E-16AB-4D1D-8330-89950F13A31E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{339F0A5E-16AB-4D1D-8330-89950F13A31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{339F0A5E-16AB-4D1D-8330-89950F13A31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{339F0A5E-16AB-4D1D-8330-89950F13A31E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0592BADB-6C48-4699-A6C8-CA1038ED4762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0592BADB-6C48-4699-A6C8-CA1038ED4762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0592BADB-6C48-4699-A6C8-CA1038ED4762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0592BADB-6C48-4699-A6C8-CA1038ED4762}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

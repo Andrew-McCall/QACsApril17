@@ -40,6 +40,12 @@ namespace QACsApril17
 
     }
 
+    // Visbility // Type // Name : base,interfaces
+    // classes: abstract static
+    // variables: final static
+    
+    // visibities: public, private, internal, protected, private protected 
+
     internal abstract class Bird : Animal
     {
 
@@ -57,7 +63,7 @@ namespace QACsApril17
 
     }
 
-    internal class Parrot : Bird, IPetable, ITamable
+    internal class Parrot : Bird, IPetable
     {
         public Parrot(string name, string scienceName) : base(10.0) // :base is constructor of super
         {
@@ -81,10 +87,6 @@ namespace QACsApril17
             Console.WriteLine("*Purrr*");
         }
 
-        public void Tame()
-        {
-            Console.WriteLine("*Roll's Over*");
-        }
     }
 
     internal class Dog : Mammal, IPetable, ITamable
@@ -131,6 +133,7 @@ namespace QACsApril17
         {
             Console.WriteLine("*Roll's Over*");
         }
+        
     }
 
     internal class WildDog : Mammal
@@ -145,12 +148,28 @@ namespace QACsApril17
 
     internal interface IPetable
     {
-        public void Pet();
+        void Pet();
     }
 
     internal interface ITamable
     {
-        public void Tame();
+        void Tame();
     }
 
+    public interface ISinger
+    {
+        void Sing();
+    }
+    public interface IWriter
+    {
+        void Write();
+    }
+    public interface ISingerSongWriter: ISinger, IWriter
+    {
+        double cash { set; get;  }
+        void Perform();
+        void MakeMoney();
+    }
+
+    
 }

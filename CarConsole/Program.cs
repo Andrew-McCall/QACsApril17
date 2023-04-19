@@ -3,7 +3,8 @@
 namespace CarConsole
 {
     internal class Program
-    {
+
+    { 
         static void Main(string[] args)
         {
             Car c1 = new Car();

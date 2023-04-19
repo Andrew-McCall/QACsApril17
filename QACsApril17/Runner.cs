@@ -15,13 +15,7 @@ namespace QACsApril17
         {
             // Upcast from dog to animal
             Animal a = new Dog("segeg", "science");
-            a.Mph = 10;
-            Console.WriteLine(a.Mph);
-            Console.WriteLine(a.Kilmetors);
-
-            a.Kilmetors = 10;
-            Console.WriteLine(a.Mph);
-            Console.WriteLine(a.Kilmetors);
+            
 
 
             Console.WriteLine(a.scientifcName);

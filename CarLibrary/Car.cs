@@ -1,7 +1,12 @@
 ﻿namespace CarLibrary
 {
+    // Static: Tells the complier everything must be static (no constuctors)
+    // Abstract: Tells the complier no-one cannot instantiate the class - allows abstract methods (no behaviour)
     public class Car
     {
+
+        public static int id { get; set; }
+
         public int Speed { 
 
             get { 
@@ -14,6 +19,7 @@
             } 
 
         }
+
         public double SpeedInKilometers { get { return _speed * 1.609344; } }
         public string? RegistrationNumber { get; set; }
 
