@@ -147,6 +147,7 @@ namespace QACsApril17
     {
         public void Pet();
     }
+
     internal interface ITamable
     {
         public void Tame();
