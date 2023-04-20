@@ -1,4 +1,5 @@
 using InterfaceProject;
+using InterfaceProject.DUKW;
 
 namespace InterfaceTestProject
 {
@@ -69,6 +70,20 @@ namespace InterfaceTestProject
         {
             Product product = new Product(50M, new USTaxRules());
             Assert.Equal(7.5M, product.GetTotalTax());
+        }
+
+        [Fact]
+        public void AmphibiousVehicle2()
+        {
+            AmphibiousVehicle av = new();
+            Assert.Equal("Screech!", av.Brake());
+            Assert.Equal("Screech!", ((ILandVehicle)av).Brake());
+            Assert.Equal("Splash!", ((IWaterVehicle)av).Brake());
+            Assert.Equal("Woosh!", ((IAirVehicle)av).Brake());
+
+            // implict down cast in a method's paramaters
+            IWaterVehicle waterVehicle = av; 
+            Assert.Equal("Splash!", waterVehicle.Brake());
         }
     }
 }

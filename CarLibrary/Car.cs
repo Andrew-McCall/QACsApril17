@@ -16,7 +16,15 @@
             set {
                 if (value < 0 || value > 100) throw new Exception();
                 _speed = value; 
-            } 
+            }
+            /*
+             get => _speed;
+
+             set => {
+                 if (value < 0 || value > 100) throw new Exception();
+                _speed = value; 
+                }
+             */
 
         }
 

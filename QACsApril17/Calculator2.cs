@@ -8,7 +8,6 @@ namespace QACsApril17
 {
     internal class Calculator2
     {
-        private IMathsFunction<double>[] functions;
         public IMathsFunction<double> CurrentOperation;
         public List<string> log = new List<string>();
 
