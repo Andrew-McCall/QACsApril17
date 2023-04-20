@@ -85,5 +85,18 @@ namespace InterfaceTestProject
             IWaterVehicle waterVehicle = av; 
             Assert.Equal("Splash!", waterVehicle.Brake());
         }
+
+        [Fact]
+        public void EceptionTesting()
+        {
+            Assert.Throws<IndexOutOfRangeException>(() => { errorr(); });
+        }
+
+        private void errorr()
+        {
+            throw new IndexOutOfRangeException();
+            //throw new Exception("message One", new Exception("message two"));
+        }
+
     }
 }
